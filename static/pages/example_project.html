@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mason Ellington | Personal Portfolio</title>
+    <!-- Page Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mason Ellington's personal portfolio - projects, resume, and contact information."
+    />
+    <meta name="author" content="Mason Ellington" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Imports -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <script defer src="../js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    ></script>
+    <script defer src="./static/js/project.js"></script>
+  </head>
+  <body>
+    <!-- Page Heading -->
+    <header>
+      <!-- Page Title -->
+      <a href="index.html"><h1>Mason Ellington</h1></a>
+
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="./about.html">About Me</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main page Content -->
+    <main>
+      <div class="project">
+        <h3 class="project_title">System Information Map</h3>
+        <p class="muted project_company">
+          Southern Iowa Electric Cooperative, inc.
+        </p>
+        <hr class="project_line" />
+        <div class="project_description">
+          <p>
+            This project includes several moving parts. There are several
+            systems within this project, from Map Generation, to rendering, to
+            information collection. This project is currently in active
+            development, a version has been released for production, but the
+            system continues to be improved. The process currently starts with a
+            Open Source project,
+            <a href="https://github.com/maptiler/tileserver-gl">TileServer GL</a
+            >, this is being removed for a more streamlined process. The
+            Tileserver Generates a <code>.mbtiles</code> file, this file is
+            automatically distributed to one of our servers to be rendered for
+            our users. The actual System Map takes the <code>.mbtiles</code> and
+            renders this as a base map, we also have a platmap, and several open
+            source maps used as base layers. We then collect information from
+            several databases, most notably our GIS database, to render various
+            interactable overlays and items on the map. These items include
+            poles, line segments, meters, etc...
+          </p>
+        </div>
+        <div class="project_details">
+          <p class="date">AUGUST 2026 - IN DEVELOPMENT</p>
+          <p>Languages Used</p>
+          <ul>
+            <li>Rust</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+          </ul>
+          <p>Project Developers</p>
+          <ul>
+            <li>Mason Ellington - Lead</li>
+            <li>Ross Hunter - Consulting</li>
+          </ul>
+          <a href="#outage-map">View Map</a>
+        </div>
+      </div>
+
+      <div class="map_project">
+        <div
+          id="outage-map"
+          class="outage-map"
+          aria-label="Map of sample locations near Ottumwa and Bloomfield"
+        ></div>
+        <p id="map-status" role="status">
+          Test areas and locations are fictional demonstration data.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Mason Ellington</p>
+      <a href="contact.html">Get in touch</a>
+    </footer>
+  </body>
+</html>

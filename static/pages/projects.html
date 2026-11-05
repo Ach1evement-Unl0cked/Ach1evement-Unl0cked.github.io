@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mason Ellington | Personal Portfolio</title>
+    <!-- Page Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mason Ellington's personal portfolio - projects, resume, and contact information."
+    />
+    <meta name="author" content="Mason Ellington" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Imports -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <script defer src="../js/script.js"></script>
+  </head>
+  <body>
+    <!-- Page Heading -->
+    <header>
+      <!-- Page Title -->
+      <a href="index.html"><h1>Mason Ellington</h1></a>
+
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="./about.html">About Me</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main page Content -->
+    <main>
+      <div class="card">
+        <h2>Projects I have worked on</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          dolore ex, aperiam, dolor amet dicta ducimus doloribus cumque expedita
+          animi in eligendi, perspiciatis modi voluptatem alias. Ipsam,
+          consectetur inventore. Delectus.
+        </p>
+      </div>
+
+      <section class="projects">
+        <div class="project">
+          <h3 class="project_title">
+            User Management and Authentication Platform
+          </h3>
+          <p class="muted project_company">
+            Southern Iowa Electric Cooperative, inc.
+          </p>
+          <hr class="project_line" />
+          <div class="project_description">
+            <p>
+              This application manages all Southern Iowa Electric Cooperative
+              employees internal system access. With this tool, users can login
+              to one application, and have access to all their internal accounts
+              at the click of a button thanks to the RESTful API. This
+              application securely saves information using a PostgreSQL
+              database, sensitive information is encryted using one of two
+              methods: Hashing and SHA256.
+            </p>
+          </div>
+          <div class="project_details">
+            <p class="date">JUNE 2026 - JULY 2026</p>
+            <p>Languages Used</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>PHP</li>
+              <li>Python</li>
+            </ul>
+            <p>Project Developers</p>
+            <ul>
+              <li>Mason Ellington - Lead</li>
+              <li>Ross Hunter - Consulting</li>
+              <li>Nathan Norton - Consulting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3 class="project_title">System Information Map</h3>
+          <p class="muted project_company">
+            Southern Iowa Electric Cooperative, inc.
+          </p>
+          <hr class="project_line" />
+          <div class="project_description">
+            <p>
+              This project includes several moving parts. There are several
+              systems within this project, from Map Generation, to rendering, to
+              information collection. This project is currently in active
+              development, a version has been released for production, but the
+              system continues to be improved. The process currently starts with
+              a Open Source project,
+              <a href="https://github.com/maptiler/tileserver-gl"
+                >TileServer GL</a
+              >, this is being removed for a more streamlined process. The
+              Tileserver Generates a <code>.mbtiles</code> file, this file is
+              automatically distributed to one of our servers to be rendered for
+              our users. The actual System Map takes the
+              <code>.mbtiles</code> and renders this as a base map, we also have
+              a platmap, and several open source maps used as base layers. We
+              then collect information from several databases, most notably our
+              GIS database, to render various interactable overlays and items on
+              the map. These items include poles, line segments, meters, etc...
+            </p>
+          </div>
+          <div class="project_details">
+            <p class="date">AUGUST 2026 - IN DEVELOPMENT</p>
+            <p>Languages Used</p>
+            <ul>
+              <li>Rust</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+            <p>Project Developers</p>
+            <ul>
+              <li>Mason Ellington - Lead</li>
+              <li>Ross Hunter - Consulting</li>
+            </ul>
+            <a class="button" href="example_project.html">Check this out!</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3 class="project_title">SIEC Time Management Application</h3>
+          <p class="muted project_company">
+            Southern Iowa Electric Cooperative, inc.
+          </p>
+          <hr class="project_line" />
+          <div class="project_description">
+            <p>
+              This application allows for users to allocate their time for a
+              given day into their respective Acrivity Codes. This system
+              automatically validates the information before allowing the user
+              to submit the timecard for their supervisor(s) to approve.
+            </p>
+          </div>
+          <div class="project_details">
+            <p class="date">JULY 2026 - IN TESTING</p>
+            <p>Languages Used</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Rust</li>
+              <li>SQL</li>
+            </ul>
+            <p>Project Developers</p>
+            <ul>
+              <li>Mason Ellington - Lead</li>
+              <li>Brian Roberts - Testing</li>
+              <li>Grace Hamaker - Testing</li>
+              <li>Melissa Scott - Consulting/Testing</li>
+              <li>Lindsay Smith - Consulting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3 class="project_title">Utility Line Inspections</h3>
+          <p class="muted project_company">
+            Southern Iowa Electric Cooperative, inc.
+          </p>
+          <hr class="project_line" />
+          <div class="project_description">
+            <p>
+              This application comes in two forms, a Central Application and a
+              Portable Application. The Central Application is running on a
+              server, while the portable version is running on several of our
+              Trucks in the field. This application allows linemen to quickly
+              and easily file a report concerning our lines. These reports
+              include frays in the lines, damaged poles, or possible future
+              issues that need to be resolved before they become an issue.
+            </p>
+          </div>
+          <div class="project_details">
+            <p class="date">MAY 2026 - JULY 2026</p>
+            <p>Languages Used</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>SQL</li>
+            </ul>
+            <p>Project Developers</p>
+            <ul>
+              <li>Mason Ellington - Lead</li>
+              <li>Ross Hunter - Consulting</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Mason Ellington</p>
+      <a href="contact.html">Get in touch</a>
+    </footer>
+  </body>
+</html>
